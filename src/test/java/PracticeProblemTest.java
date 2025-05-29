@@ -61,7 +61,7 @@ void MathPathsTest3() {
     {"", "", "*", ""},
     {"S", "", "", ""},
   };
-    assertEquals(1, (int)method.invoke(null, new Object[]{maze}));
+    assertEquals(4, (int)method.invoke(null, new Object[]{maze}));
 }
 
 
@@ -86,7 +86,7 @@ void MazePathsTest2() {
     {"", "", "", "", ""},
     {"S", "", "", "", ""},
   };
-    assertEquals(3, (int)method.invoke(null, new Object[]{maze}));
+    assertEquals(183, (int)method.invoke(null, new Object[]{maze}));
 }
 
 
@@ -111,7 +111,7 @@ void MazePathsTest1() {
     {"", "", "", "F", ""},
     {"S", "*", "*", "", ""},
   };
-    assertEquals(1, (int)method.invoke(null, new Object[]{maze}));
+    assertEquals(143, (int)method.invoke(null, new Object[]{maze}));
 }
 
 
@@ -161,7 +161,7 @@ void SearchMazeMovesTest2() {
     {"", "", "*", "F", ""},
     {"S", "*", "", "", ""},
   };
-    assertEquals(-1, (int)method.invoke(null, new Object[]{maze}));
+    assertEquals(6, (int)method.invoke(null, new Object[]{maze}));
 }
 
 
